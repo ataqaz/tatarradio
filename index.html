@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TatarRadioBot</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        let isActive = false;
+        function play() {
+            var audio = document.getElementById("audio");
+            if (!isActive)
+            {
+                audio.play();
+                isActive = true;
+            
+            } else {
+                audio.pause();
+                isActive = false;
+            }
+        }
+    </script>
+
+    </head>
+<body>
+    
+
+    <audio id="audio" autostart="1" autostart="true" preload="none">
+        <source src="https://tatarradio.hostingradio.ru/tatarradio320.mp3"/>
+    </audio>
+
+
+    <div class="botón" onclick="this.classList.toggle('active'); play()"> 
+
+        <div class="fondo" x="0" y="0" width="200" height="200"></div>
+        <div class="icono" width="200" height="200">
+            <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+            <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+        </div>
+        <div class="puntero"></div>
+        
+    </div>
+
+</body>
+
+</html>
