@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TatarRadioBot</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Yandex.RTB -->
-    <script>
-        window.yaContextCb = window.yaContextCb || []
-    </script>
-    <script src="https://yandex.ru/ads/system/context.js" async></script>
 
     <script>
         let isActive = false;
@@ -32,6 +26,8 @@
 
 <body>
 
+    <div class="four"><h1>Татар радиосы</h1>
+
     <audio id="audio" autostart="1" autostart="true" preload="none">
         <source src="https://tatarradio.hostingradio.ru/tatarradio320.mp3" />
     </audio>
@@ -45,18 +41,9 @@
         </div>
         <div class="puntero"></div>
 
-        <!-- Yandex.RTB R-A-12230086-1 -->
-        <script>
-            window.yaContextCb.push(() => {
-                Ya.Context.AdvManager.render({
-                    "blockId": "R-A-12230086-1",
-                    "type": "floorAd",
-                    "platform": "touch"
-                })
-            })
-        </script>
-
     </div>
+
+</div>
 
 </body>
 
