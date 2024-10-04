@@ -1,10 +1,16 @@
 body {
-  background: #F4F7EE;
+  /* background-image: url("fon.png");
+  backdrop-filter: blur(8px);
+  background-size: auto; 
+  filter: brightness(90%); */
+
+  background: #10190a;
   align-items: center;
   display: flex;
   justify-content: center;
   height: 100vh;
   margin: 0;
+  
 }
 .botón {
   align-items: center;
@@ -596,15 +602,18 @@ body {
 
 
 .four {
-  background: #F4F7EE;
+  /* background-size: cover;  */
+  /* background: #F4F7EE; */
   padding: 50px 20px;
   text-align: center;
+  margin-top: 5;
+  padding: 10px 30px 10px 20px;
 } 
 .four h1 {
   font-family: 'Merriweather', serif;
   position: relative;
-  color: #C44737;
-  font-size: 50px;
+  color: #f4471f;
+  font-size: 30px;
   font-weight: normal;
   padding: 8px 20px 7px 20px;
   border-top: 4px solid;
@@ -620,7 +629,7 @@ body {
   height: 28px;
   top: -28px;
   left: -28px;
-  border: 4px solid #C44737;
+  border: 4px solid #f4471f;
   box-sizing: border-box;
 }
 @media (max-width: 450px) {
